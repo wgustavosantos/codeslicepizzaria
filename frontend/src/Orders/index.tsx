@@ -38,20 +38,24 @@ function Orders() {
     }
 
     const handleSubmit = () => {
-        const productsIds = selectedProducts.map(({ id }) => ({ id }));
-        const payload = {
-          ...orderLocation!,
-          products: productsIds
-        }
-      
-        saveOrder(payload).then((response) => {
-          toast.error(`Pedido enviado com sucesso! Nº ${response.data.id}`);
-          setSelectedProducts([]);
-        })
-          .catch(() => {
-            toast.warning('Erro ao enviar pedido');
+      const productsIds = selectedProducts.map(({ id }) => ({ id }));
+      const payload = {
+        ...orderLocation!,
+        products: productsIds
+      }
+  
+      saveOrder(payload)
+          .then((response) => {
+              toast.success(`Pedido enviado com sucesso! Nº ${response.data.id}`);
+              setSelectedProducts([]);
+              
+              // Rolando a tela para o topo
+              window.scrollTo({ top: 0, behavior: 'smooth' });
           })
-    }
+          .catch(() => {
+              toast.warning('Erro ao enviar pedido');
+          })
+  }
 
     return (
         <>

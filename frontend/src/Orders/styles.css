@@ -264,6 +264,10 @@
     background-color: #fcf2f2;
     transform: scale(1.01);
   }
+
+  .Toastify__toast--success {
+  background: #008E5B;
+  }
   
   @media only screen and (max-width: 768px) {
     .orders-steps-content {
