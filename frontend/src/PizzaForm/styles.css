@@ -1,0 +1,122 @@
+ /* index*/
+
+ .container {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #f8f9fa; 
+    min-height: 92vh;
+    /*background-image: url(https://media-public.canva.com/TiDPY/MAFabCTiDPY/1/tl.png);*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y:bottom ;
+    background-size: 30%;
+  }
+
+.title{
+    color: #DA5C5C;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    text-transform: capitalize;
+    margin-left: 2%;
+}
+
+/*form*/
+
+.product-form {
+    max-width: 400px;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  label {
+    margin-bottom: 8px;
+    display: block;
+  }
+  
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 12px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    resize: none;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #descricao{
+    height: 120px;
+  }
+  .btn-success {
+    background-color: #28a745; 
+    color: #fff; 
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-right: 22%;
+  }
+
+  .btn-danger {
+    background-color: #DA5C5C; 
+    color: #fff; 
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left:21%;
+  }
+  
+ 
+  .btn-success:hover {
+    background-color: #218838;
+  }
+  
+  .btn-danger:hover {
+    background-color: #d12727;
+  }
+  .titles{
+    font-size: 20px;
+    
+  }
+ 
+
+  input[type=number]::-webkit-inner-spin-button,
+  input[type=number]::-webkit-outer-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+
+    
+  }
+
+ 
+  #file-pizza{
+    text-align: center;
+    background-color: #9e9e9e; 
+    color: #fff; 
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 20px;
+    background-size: 100%;
+    display: inline-block;
+    min-width: 93%;
+  }
+
+  input[type="file"] {
+    display: none;
+    box-sizing: 100%;
+  }
+
+#file-pizza:hover {
+    background-color: #7c7b7b;
+  }
