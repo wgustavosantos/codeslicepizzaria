@@ -43,3 +43,7 @@ Inicie o frontend: npm start
   - Amazon S3: Serviço de armazenamento em nuvem para o upload de imagens.
   
 ### Funcionalidades
+
+### Em produção
+
+### Autores
