@@ -1,0 +1,23 @@
+/* AdminPage.css */
+.admin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .admin-btn {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+    background-color: #da5c5c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
+  .admin-btn:hover {
+    background-color: #c04545;
+  }
+  

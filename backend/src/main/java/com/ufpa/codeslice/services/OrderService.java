@@ -27,7 +27,7 @@ public class OrderService {
 		
 	@Transactional(readOnly = true)
 	public List<OrderDTO> findAll() {
-		List<Order> list = repository.findOrdersWithProducts();
+		List<Order> list = repository.findAll();
 		return list.stream().map(x -> new OrderDTO(x)).collect(Collectors.toList());
 	}
 	
@@ -43,9 +43,10 @@ public class OrderService {
 	}
 	
 	@Transactional
-	public OrderDTO setDelivered(Long id) {
+	public OrderDTO
+	setDelivered(Long id) {
 		Order order = repository.getOne(id);
-		order.setStatus(OrderStatus.DELIVERED);
+		order.setStatus(order.getStatus().toggleStatus());
 		order = repository.save(order);
 		return new OrderDTO(order);
 	}

@@ -49,7 +49,6 @@ function Orders() {
               toast.success(`Pedido enviado com sucesso! Nº ${response.data.id}`);
               setSelectedProducts([]);
               
-              // Rolando a tela para o topo
               window.scrollTo({ top: 0, behavior: 'smooth' });
           })
           .catch(() => {

@@ -1,5 +1,5 @@
 import './styles.css';
-import { ReactComponent as MainImage } from './main.svg'; 
+import { ReactComponent as MainImage } from './main.svg';
 import { Link } from 'react-router-dom';
 import Footer from '../Footer';
 
@@ -19,8 +19,9 @@ function Home() {
                         <Link to="/orders" className="home-btn-order">
                             FAZER PEDIDO
                         </Link>
-                        <Link to={"/cadastro"} className='home-btn-order'>
-                        AREA DE ADMIN
+                    
+                        <Link to="/admin" className="home-btn-order">
+                            ÁREA DE ADMIN
                         </Link>
                     </div>
                     <div className="home-image">

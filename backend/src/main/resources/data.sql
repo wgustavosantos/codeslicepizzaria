@@ -1,27 +1,27 @@
-# CREATE TABLE tb_product (
-#                             id INT AUTO_INCREMENT PRIMARY KEY,
-#                             name VARCHAR(255) NOT NULL,
-#                             price DECIMAL(10, 2) NOT NULL,
-#                             image_Uri VARCHAR(255),
-#                             description TEXT
-# );
-#
-# CREATE TABLE tb_order (
-#                           id INT AUTO_INCREMENT PRIMARY KEY,
-#                           status INT NOT NULL,
-#                           latitude DECIMAL(10, 6) NOT NULL,
-#                           longitude DECIMAL(10, 6) NOT NULL,
-#                           address VARCHAR(255) NOT NULL,
-#                           moment DATETIME NOT NULL
-# );
-#
-# CREATE TABLE tb_order_product (
-#                                   id INT AUTO_INCREMENT PRIMARY KEY,
-#                                   order_id INT NOT NULL,
-#                                   product_id INT NOT NULL,
-#                                   FOREIGN KEY (order_id) REFERENCES tb_order(id),
-#                                   FOREIGN KEY (product_id) REFERENCES tb_product(id)
-# );
+CREATE TABLE tb_product (
+                            id INT AUTO_INCREMENT PRIMARY KEY,
+                            name VARCHAR(255) NOT NULL,
+                            price DECIMAL(10, 2) NOT NULL,
+                            image_Uri VARCHAR(255),
+                            description TEXT
+);
+
+CREATE TABLE tb_order (
+                          id INT AUTO_INCREMENT PRIMARY KEY,
+                          status INT NOT NULL,
+                          latitude DECIMAL(10, 6) NOT NULL,
+                          longitude DECIMAL(10, 6) NOT NULL,
+                          address VARCHAR(255) NOT NULL,
+                          moment DATETIME NOT NULL
+);
+
+CREATE TABLE tb_order_product (
+                                  id INT AUTO_INCREMENT PRIMARY KEY,
+                                  order_id INT NOT NULL,
+                                  product_id INT NOT NULL,
+                                  FOREIGN KEY (order_id) REFERENCES tb_order(id),
+                                  FOREIGN KEY (product_id) REFERENCES tb_product(id)
+);
 
 INSERT INTO tb_product (name, price, image_Uri, description) VALUES ('Pizza Bacon', 49.9, 'https://lafoca.s3.amazonaws.com/fotos/pizza_bacon.jpg', 'Pizza de bacon com mussarela, orégano, molho especial e tempero da casa.');
 INSERT INTO tb_product (name, price, image_Uri, description) VALUES ('Pizza Moda da Casa', 59.9, 'https://lafoca.s3.amazonaws.com/fotos/pizza_moda.jpg', 'Pizza à moda da casa, com molho especial e todos ingredientes básicos, e queijo à sua escolha.');

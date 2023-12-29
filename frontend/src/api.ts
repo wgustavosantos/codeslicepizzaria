@@ -1,11 +1,21 @@
 import axios from "axios";
-import { OrderPayload, PizzaData } from './Orders/types';
+import { OrderPayload, PizzaData, OrderDTO } from './Orders/types';
 
 const API_URL = "http://localhost:8080";
 const mapboxToken = "pk.eyJ1IjoiZ3VzcG9udG9jb20iLCJhIjoiY2w3Y2MydzlvMHU0MDN5cGZhYXljem5vMyJ9.mlKfYDGpAqLBS9eFs03Cxg";
 
-export function fetchProducts(){
+export function fetchProducts() {
     return axios(`${API_URL}/products`)
+}
+
+export function fetchOrders() {
+    return axios.get(`${API_URL}/orders`);
+}
+
+export function updateOrderStatus(orderId: number, newStatus: string) {
+    return axios.put<OrderDTO>(`${API_URL}/orders/${orderId}/delivered`, null, {
+        params: { id: orderId, status: newStatus },
+    });
 }
 
 export function addProducts(PizzaData: PizzaData) {

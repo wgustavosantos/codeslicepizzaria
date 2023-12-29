@@ -53,10 +53,9 @@
       e.preventDefault();
       try {
         const response = await addProducts(formData); 
-        console.log(response.data)
         if (response.status === 200) {
-          onSubmit(formData);
           await addPhoto(response.data.id, photoFormData.photo);
+          onSubmit(formData);
           setFormData({
             name: '',
             price: 0,

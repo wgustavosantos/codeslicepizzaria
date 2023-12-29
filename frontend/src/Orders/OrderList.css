@@ -1,0 +1,53 @@
+.order-list-container {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.order-item {
+  margin-bottom: 20px;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.order-item strong {
+  color: #DA5C5C;
+}
+
+.order-item div {
+  margin-bottom: 10px;
+}
+
+.order-status-pending {
+  color: #DA5C5C;
+  font-weight: bold;
+}
+
+.order-status-delivered {
+    color: #008E5B;
+    font-weight: bold;
+  }
+
+.order-products {
+  margin-top: 10px;
+}
+
+.product-item {
+  margin-bottom: 5px;
+}
+
+.change-status-btn {
+  background-color: #DA5C5C;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.change-status-btn:hover {
+  background-color: #c14141;
+}

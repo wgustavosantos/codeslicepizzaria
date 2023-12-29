@@ -3,6 +3,8 @@ import Home from './Home';
 import Navbar from './Navbar';
 import Orders from './Orders';
 import CadastroPizzaPage from './PizzaForm';
+import AdminPage from './PizzaForm/AdminPage';
+import OrderList from './Orders/OrderList';
 
 function Routes() {
     return (
@@ -15,8 +17,14 @@ function Routes() {
           <Route path="/" exact>
             <Home />
           </Route>
-          <Route path="/cadastro" exact>
+          <Route path="/admin/cadastro-pizza" exact>
             <CadastroPizzaPage />
+          </Route>
+          <Route path="/admin/lista-pedidos" exact>
+            <OrderList/>
+          </Route>
+          <Route path="/admin" exact>
+            <AdminPage/>
           </Route>
         </Switch>
       </BrowserRouter>
