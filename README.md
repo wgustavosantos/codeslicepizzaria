@@ -21,6 +21,12 @@
   - TypeScript: Superset do JavaScript que adiciona tipagem estática.
   - mapbox para buscar endereços
 
+### Diagram ER e Estrutura do sistema
+
+![BDCODESLICE](https://github.com/leandrovelosos/readme/assets/77124683/b55cb02d-f9a8-430a-a09f-04a363287cf3)
+
+![pastas](https://github.com/leandrovelosos/readme/assets/77124683/c008a6dc-6277-4a43-8b1e-6b3e1cb72bc4)
+
 ### Pré-requisitos
 Antes de começar, certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 <br>
@@ -45,6 +51,9 @@ cd backend
 
 3. **Configure o arquivo ```application-dev.properties``` com suas credenciais do MySQL e AWS.**
 ```
+spring.datasource.username=
+spring.datasource.password=
+
 
 ufpacodeslice.storage.s3.id-chave-acesso=
 ufpacodeslice.storage.s3.chave-acesso-secreta=
