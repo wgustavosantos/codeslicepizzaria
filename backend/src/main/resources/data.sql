@@ -1,4 +1,4 @@
-CREATE TABLE tb_product (
+CREATE TABLE IF NOT EXISTS tb_product (
                             id INT AUTO_INCREMENT PRIMARY KEY,
                             name VARCHAR(255) NOT NULL,
                             price DECIMAL(10, 2) NOT NULL,
@@ -6,7 +6,7 @@ CREATE TABLE tb_product (
                             description TEXT
 );
 
-CREATE TABLE tb_order (
+CREATE TABLE IF NOT EXISTS tb_order (
                           id INT AUTO_INCREMENT PRIMARY KEY,
                           status INT NOT NULL,
                           latitude DECIMAL(10, 6) NOT NULL,
@@ -15,7 +15,7 @@ CREATE TABLE tb_order (
                           moment DATETIME NOT NULL
 );
 
-CREATE TABLE tb_order_product (
+CREATE TABLE IF NOT EXISTS tb_order_product (
                                   id INT AUTO_INCREMENT PRIMARY KEY,
                                   order_id INT NOT NULL,
                                   product_id INT NOT NULL,
