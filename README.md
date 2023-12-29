@@ -1,5 +1,4 @@
-<div style="text-align:center">
-  
+
 #  ![UFPA](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDyOqG3iMuzdu5X_KpvPiBXGXQ1I-LtBEgEQ&usqp=CAU)
 
 </div>
@@ -128,6 +127,8 @@ npm start
   ![desktop-home](https://github.com/GustavoSC1/dsdeliver/assets/77124683/4928b25a-8a8b-4fcc-ac37-9f7c301b4232)
 - Efetuar pedidos
     ![desktop-fazer-pedido](https://github.com/GustavoSC1/dsdeliver/assets/77124683/9855a1ee-3f76-4aa3-9091-3399edfa7870)
+  ![image](https://github.com/wgustavosantos/codeslicepizzaria/assets/77124683/189f437a-8560-4a18-824b-687801a26d3d)
+
 - Área de administrador
   ![desktop-area-admin](https://github.com/GustavoSC1/dsdeliver/assets/77124683/ce8c0c95-e480-48cd-b926-5e7836e7f2af)
 - Cadastro de pizzas
@@ -143,6 +144,8 @@ npm start
 - Efetuar pedidos(responsivo)
   
 ![mobile (1)](https://github.com/GustavoSC1/dsdeliver/assets/77124683/43113049-f0d8-413b-b520-be9eb1a5c04b)
+
+![mobile (2)](https://github.com/wgustavosantos/codeslicepizzaria/assets/77124683/65bff446-f2c5-444d-8c30-1a43dfe09c3f)
 
 
 ### Autores
