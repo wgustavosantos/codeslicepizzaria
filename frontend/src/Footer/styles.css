@@ -8,3 +8,9 @@
     text-align: center;
     color: #FFF;
   }
+
+  @media only screen and (max-width: 768px) {
+    .main-footer {
+     font-size: 15px;
+    }
+  }

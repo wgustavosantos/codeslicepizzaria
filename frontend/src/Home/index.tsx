@@ -12,7 +12,7 @@ function Home() {
                         <h1 className="home-title">
                             Faça seu pedido <br /> que entregamos <br /> pra você!!!
                         </h1>
-                        <h3>
+                        <h3 className='home-text'>
                             Escolha o seu pedido e em poucos minutos <br />
                             levaremoss na sua porta
                         </h3>

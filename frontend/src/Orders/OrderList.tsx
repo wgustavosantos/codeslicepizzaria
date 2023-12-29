@@ -51,7 +51,7 @@ const OrderList: React.FC<OrderListProps> = () => {
                   : 'order-status-delivered'
               }`}
             >
-              Status: {order.status}
+              Status: {order.status === "PENDING" ? "Pendente" : "Entregue"}
             </div>
             <div>Total: R$ {order.total.toFixed(2)}</div>
             <div className="order-products">

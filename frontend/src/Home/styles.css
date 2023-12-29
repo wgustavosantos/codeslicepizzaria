@@ -86,4 +86,8 @@
     .home-image svg {
       width: 80%;
     }
+
+    .home-text {
+      text-align: center;
+    }
   }
